@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Input Projection
+  m_Shader: {fileID: 4800000, guid: 8be0317a24ec2024491b62513028b436, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _KeyMidTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _KeyRangeTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorExponent: 1
+    - _Cutoff: 0.5
+    - _GroundHeight: 0
+    - _InvFade: 1
+    - _KeyingFactor: 1
+    - _PlayerDepth: 0.0008000399
+    - _Tolerance: 0
+    - _slope: 0.2
+    - _thresh: 0.3
+    m_Colors:
+    - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _KeyColor: {r: 0.4156863, g: 0.7411765, b: 0.29803923, a: 1}
+    - _KeyHsvFeathering: {r: 0.040769253, g: 0.040769253, b: 0.040769253, a: 0}
+    - _KeyHsvMid: {r: 0.38580248, g: 0.45332855, b: 0.6019608, a: 0}
+    - _KeyHsvRange: {r: 0.21913579, g: 0.43758053, b: 0.39803922, a: 0}
+    - _KeyHsvWeights: {r: 1, g: 1, b: 1, a: 1}
+    - _Region: {r: 0, g: 0, b: 1, a: -0.36231536}
+    - _TintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _channelFactors: {r: 1, g: 1, b: 1, a: 1}
+    - _channelFeathers: {r: 0, g: 0.033333335, b: 0.14166667, a: 1}
+    - _channelLimits: {r: 0.21428572, g: 0.10434246, b: 0.29411763, a: 1}
+    - _keyColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _keyFactors: {r: 1, g: 1, b: 1, a: 1}
+    - _keyFeathering: {r: 0, g: 0, b: 0, a: 1}
+    - _keyFeathers: {r: 0, g: 0, b: 0, a: 1}
+    - _keyLimits: {r: 0, g: 0, b: 0, a: 0}
+    - _keyWeights: {r: 1, g: 1, b: 1, a: 1}
+    - _keyingColor: {r: 0.64371437, g: 0.7058824, b: 0.6188472, a: 1}
