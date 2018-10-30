@@ -1,5 +1,3 @@
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,17 +8,14 @@ namespace Valve.VR.InteractionSystem
     public class ShowMenu : MonoBehaviour
     {
         public SteamVR_Action_Single showMenu;
-
         public GameObject menuUI;
-
         private Hand hand;
 
         private void OnEnable() {
             if (hand == null)
                 hand = this.GetComponent<Hand>();
 
-            if (showMenu == null)
-            {
+            if (showMenu == null) {
                 Debug.LogError("No show menu action assigned");
                 return;
             }
