@@ -4,24 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Valve.VR.InteractionSystem;
 
-public class LiftButton : MonoBehaviour
-{
+public class LiftButton : MonoBehaviour {
     public GameObject LiftObject;
-
     private AnimateLift lift;
 
-
-    public void OnButtonDown(Hand hand)
-    {
+    public void OnButtonDown(Hand hand) {
         hand.TriggerHapticPulse(1000);
-        if (!lift.IsMoving())
-        {
-            if (lift.IsAtTop())
-            {
+	    
+        if (!lift.IsMoving()) {
+            if (lift.IsAtTop()) {
                 lift.GoDown();
-            }
-            else if (lift.IsAtBottom())
-            {
+            } else if (lift.IsAtBottom()) {
                 lift.GoUp();
             }
         }
@@ -30,7 +23,6 @@ public class LiftButton : MonoBehaviour
 
     // Use this for initialization
     void Start () {
-		lift = transform.parent.GetComponent<AnimateLift>();
-	}
-
+	lift = transform.parent.GetComponent<AnimateLift>();
+    }
 }
