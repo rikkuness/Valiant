@@ -3,16 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
 
-namespace Valve.VR.InteractionSystem
-{
-  public class Torch : MonoBehaviour
-  {
+namespace Valve.VR.InteractionSystem {
+  public class Torch : MonoBehaviour {
+	  
     public SteamVR_Action_Boolean torchToggle;
-
     public Hand hand;
-		public Light torchBulb;
-    private void OnEnable()
-    {
+    public Light torchBulb;
+    
+    private void OnEnable() {
       if (hand == null)
         hand = this.GetComponent<Hand>();
 
@@ -25,10 +23,10 @@ namespace Valve.VR.InteractionSystem
       torchToggle.AddOnChangeListener(OnTorchToggle, hand.handType);
     }
 
-		private void OnTorchToggle(SteamVR_Action_In actionIn) {
-			if (torchToggle.GetStateDown(hand.handType)) {
-				torchBulb.enabled = !torchBulb.enabled;
-			}
-		}
+    private void OnTorchToggle(SteamVR_Action_In actionIn) {
+      if (torchToggle.GetStateDown(hand.handType)) {
+        torchBulb.enabled = !torchBulb.enabled;
+      }
+    }
   }
 }
